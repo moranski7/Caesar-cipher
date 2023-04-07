@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caesar Cipher</title>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<h1>Caesar Cipher</h1>
+	<div id="Intro">
+		<p>A Caesar is a method of encoding messages. This encryption uses a substitution method where letters in the alphabet are shifted by some fixed number of spaces. Type below to see how this encryption works.</p>
+	</div>
+	<div class="text-area-holder">
+		<textarea class="text-area" id="EnterText" rows="10" cols="100" oninput="EncryptText()" placeholder="Enter text here"></textarea>
+	</div>
+	<div class="text-area-holder">
+		<textarea class="text-area" id="CipherText" rows="10" cols="100" readonly="readonly" placeholder="Results Appear here"></textarea>
+	</div>
+	<div id="Testing-Area">
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
