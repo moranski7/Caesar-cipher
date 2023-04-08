@@ -9,15 +9,20 @@
 <body>
 	<h1>Caesar Cipher</h1>
 	<div id="Intro">
-		<p>A Caesar is a method of encoding messages. This encryption uses a substitution method where letters in the alphabet are shifted by some fixed number of spaces. Type below to see how this encryption works.</p>
+		<p>A Caesar is a method of encoding messages. This encryption uses a substitution method where letters in the alphabet are shifted by some fixed number. Type below to see how this encryption works.</p>
 	</div>
 	<div class="text-area-holder">
+		<div id="NumberHolder">
+			<label for="ShiftNumber">Shift Number:</label>
+			<input type="number" id="ShiftNumber" name="ShiftNumber" value="0" step="1" oninput="validity.valid || (value = 0)" onchange="GetShift()" required/>
+		</div>
 		<textarea class="text-area" id="EnterText" rows="10" cols="100" oninput="EncryptText()" placeholder="Enter text here"></textarea>
+	</div>
+	<div class="shift-holder">
+		<p id="shift-info"></p>
 	</div>
 	<div class="text-area-holder">
 		<textarea class="text-area" id="CipherText" rows="10" cols="100" readonly="readonly" placeholder="Results Appear here"></textarea>
-	</div>
-	<div id="Testing-Area">
 	</div>
 	<script src="main.js"></script>
 </body>

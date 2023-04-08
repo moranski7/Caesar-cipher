@@ -7,10 +7,23 @@
 	position: relative;
 	left: 25%;
 }
-#Testing-Area {
-}
 #CipherText:focus {
 	outline:0;
+}
+#NumberHolder {
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	left: 5%;
+	margin-bottom: 10px;
+}
+#shift-info {
+	font-size: 35px;
+	font-family: Didot;
+	font-weight: bold;
+	position: relative;
+	left: 25%;
 }
 .text-area {
 	rows: 10;
@@ -22,6 +35,23 @@
 .text-area-holder {
 	text-align: center;
 	margin-bottom: 25px;
+	width: 1250px;
+	position: relative;
+	left: 20%;
+	/*border:inset 1px black;*/
+}
+.shift-holder {
+	width: 1125px;
+	position: relative;
+	left: 23%;
+	margin-bottom: 25px;
+	/*border:inset 1px black;*/
+}
+.letter-placeholder {
+	color:darkolivegreen;
+}
+.number-placeholder {
+	color: darkred;
 }
 h1 {
 	text-align: center;
